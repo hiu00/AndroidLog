@@ -1,0 +1,39 @@
+一、创建git
+git init
+二、查看仓库状态
+git status
+
+
+一、将文件添加到暂存区
+  --git add 文件名   (eg:git add index.html)
+  --把当前目录下所有的文件提交到缓存区：git add .
+二、将暂存区的文件提交到git
+  --git commit -m "add index file"
+三、更新提交内容
+  --先在编译器更新文件内容，再重复上述步骤（添加至缓存区、提交）
+四、如何从Git中还原文件
+1、查看提交历史：git log(最新记录会显示到上面)
+2、恢复提交历史：已提交到git的：git reset --hard HEAD~（意思是最新的版本是错的，要恢复到倒数第二次的版本）注：只有状态是干净的情况下才能用这个恢复
+	             未提交到暂存区的：git restore 文件名称
+		已提交到暂存区未提交到git的：git restore -staged 文件名称
+ 
+Giyhub
+一、添加远程仓库
+来到website根目录，执行git remote add origin https://github.com/hiu00/first1.git
+二、推送本地代码（要保证有提交，即仓库不为空）
+先执行：git branch -M main（反对种族歧视，要把github改名，将master分支该为main分支）
+再执行：git push -u origin main
+
+
+如何搜索需要的资源：
+一、android 先去github搜 搜索关键字为：方向+功能关键字
+如何挑选高质量的项目：
+1、star数（收藏数）
+注：star多，不一定有多好，很有可能是这个功能用的多。
+2、最近更新日期
+因为时间间隔太久，可能新版本无法编译
+3、完善的文档
+可以通过查看效果图，还有使用说明，我们大概就知道该项目时候适合我们
+4、查看Issue（问题）
+从这里可以看到，这个项目还有哪些问题，以及开发者，是否有解决这些问题
+5、如何查看项目帮助信息——README文件
