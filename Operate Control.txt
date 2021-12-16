@@ -1,0 +1,12 @@
+如何使用在代码中操作控件
+一、设置控件id
+二、找控件,设置控件：如果通过Id找呢？就是通过findViewById方法。
+1. //找到id为tv的TextView控件
+       TextView tv= findViewById(R.id.tv);
+2.//然后就可以进行一些设置，不同的控件有不同的设置方法
+        tv.setText("代码中设置的文字");
+三、每个控件都有两个必填属性，宽和高
+    值可以为：wrap_content（表示，里面的内容有多大他就有多大），
+    match_parent：表示父容器（父布局）有多大他就多大
+
+注释代码快捷键：Ctrl+/

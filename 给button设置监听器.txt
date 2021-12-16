@@ -1,0 +1,13 @@
+//设置监听器，这一点和Java中的GUI编程差不多
+bt.setOnClickListener(new View.OnClickListener() {    //一个静态方法
+    @Override
+    public void onClick(View v) {
+        //点击按钮后，他就会执行这个方法
+        //基本上所有的Android事件都是这样一个使用方法
+        //显示一个提示，就是Android特有的吐司
+        Toast.makeText(MainActivity.this, "你还真点击啊！", Toast.LENGTH_SHORT).show();
+    }  
+});
+
+注：Toast.makeText（）是Toast 最常见的创建方式，是静态方法，也就是弹出框的提示信息。
+包含三个变量：1，使用环境（当前页面.this）；2，显示的内容；3，显示持续时间的长短。4.引用显示方法。

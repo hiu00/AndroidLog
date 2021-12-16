@@ -1,0 +1,6 @@
+线性布局LinearLayout的使用
+一、TextView控件，他是在屏幕中心。是靠LinearLayout实现的。
+二、LinearLayout是一个容器控件；
+三、LinearLayout默认的方向是水平（horizontal）；更改为垂直只需要设置orientation属性为vertical；
+四、边距
+可以看到现在TextView太靠近屏幕，可以给LinearLayout设置padding（内边距），也可以给TextView设置margin（外边距）；
