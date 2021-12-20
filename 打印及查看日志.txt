@@ -1,0 +1,5 @@
+一、打印日志API
+Log.d(TAG,"日志内容");——对应Debug调试
+Log.e(TAG,"日志内容");——e：error  打印错误日志
+二、查看日志
+在Android Studio的Logcat视图。

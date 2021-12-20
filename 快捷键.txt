@@ -1,0 +1,4 @@
+创建Activity快捷键：
+1、macOS：选中要创建的包，按command+n；然后输入act，就可以快速定位到activity，然后按右箭头，就可以打开activity模板，然后输入activity模板前几个字符，就可以快速定位到该模板activity，最后回车。
+2、Windows：步骤和上面一样；只是快捷键为alt+insert，或者ctrl+alt+insert。
+3、修复快捷键（导入R文件）：Alt+Enter

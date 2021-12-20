@@ -1,0 +1,5 @@
+AndroidManifest
+一、可以翻译为“清单文件”，所以说他的功能就是将当前应用的界面，等其他组件写到这里。
+二、更改默认启动界面
+只需要把AndroidManifest里Activity里的intent-filter剪贴到对应的Activity标签内，此Activity页面即为默认启动页面。
+注：如果在多个Activity放置intent-filter，则在模拟器里会生成多个图标。（一般不常用）
