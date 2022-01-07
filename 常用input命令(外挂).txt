@@ -1,0 +1,22 @@
+一、该命令可以输入文本，点击事件，滑动事件，在做自动化测试和渗透测试的时候非常有用。
+二、输入文本
+input text 123
+input text "http://www.ixuea.com/"
+三、按键
+input keyevent 3 //home键
+input keyevent 24 //音量+
+四、按键代码
+KEYCODE_UNKNOWN=0;
+KEYCODE_SOFT_LEFT=1;
+KEYCODE_SOFT_RIGHT=2;
+KEYCODE_HOME=3;     //home键
+KEYCODE_BACK=4;     //back键
+...........
+五、点击
+input tap 223 854 //点击坐标x:223,y:854
+六、滑动
+input swipe 300 1000 300 500 //x1 y1 x2 y2触摸滑动，向上滑动500像素
+注：手机的左上角坐标为（0，0）
+上述坐标的y1-y2,即1000-500=500,即向上滑动500像素。
+
+input swipe 223 854 223 854 2000 //在当前位置，按1秒钟，即由当前位置滑动到当前位置，相当于长按

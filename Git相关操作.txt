@@ -37,3 +37,12 @@ Giyhub
 4、查看Issue（问题）
 从这里可以看到，这个项目还有哪些问题，以及开发者，是否有解决这些问题
 5、如何查看项目帮助信息——README文件
+
+如何查看代码和资源Git提交历史
+一、查看所有提交历史：git log --all
+二、切换到某次提交：git checkout 13fa07
+三、1、查看两次提交更改了哪些文件：git diff --name-only 13fa07 2ef078
+2、查看两次提交更改了哪些内容：git diff  13fa07 2ef078
+四、比较两次提交：git diff 35a5 f0ff
+五、比较两次提交的指定文件：git diff 35a5 f0ff code/video/mycloudmusicswift/Podfile
+六、搜索历史：git log --grep 20.6

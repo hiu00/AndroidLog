@@ -1,0 +1,22 @@
+一、常用命令：
+adb devices：查看Android设备
+adb -s 设备名称：如果有多个设备，可以通过该命令对指定的设备操作
+adb start-server：开始adb服务，如果没开启，执行其他adb命令就会开始，所以该命令基本很少用到
+adb kill-server :停止adb服务，有时候电脑有多个adb，会暂用端口，所以需终止再开启，看看问题能否解决
+adb connect 192.168.1.8：通过wifi连接android设备，一般都是通过数据线，现在很多真机云测，可以远程连接
+adb disconnect 192.168.1.8：断开连接
+二、install
+adb install ixuea.apk：安装apk
+adb install -r ixuea.apk：覆盖安装
+三、uninstall
+adb uninstall com.ixuea.course.kanmeitu：卸载应用，后面是包名（包名在项目的App-build.gradle-defaultConfig中的applicationId后面的内容）
+四、push/pull
+推送/下载文件
+（推送：将电脑上的东西推送到手机，下载：将手机上的东西下载到电脑上。）
+adb push ixuea.apk /sdcard/ ：将ixuea.apk推送到/sdcard/目录
+adb push files/ /sdcard/files/：将files文件夹推送到/sdcard/files目录，所有文件，包括子文件夹
+
+adb pull /sdcard/ixuea.apk ./：将/sdcard/目录中的ixuea.apk下载到当前目录中
+adb pull /sdcard/ixuea.apk ./a.apk：同上，改名为a.apk
+adb pull /sdcard/files/ ./：将/sdcard/files目录中下载到当前目录中
+adb pull /sdcard/files/ ./newdir：同上，改名为newdir
